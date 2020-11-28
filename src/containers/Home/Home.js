@@ -44,8 +44,8 @@ const Home = () => {
 
     const getCurrentLocationWeather =
         useCallback(() => navigator.geolocation.getCurrentPosition((position) => {
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
+            const lat = position.coords.latitude || 32.0853;
+            const lon = position.coords.longitude || 34.7818;
             dispatch(homeActions.getCurrentLocationWeather(lat, lon, isMetric, currentfavourites));
         }), [dispatch, isMetric]);
 

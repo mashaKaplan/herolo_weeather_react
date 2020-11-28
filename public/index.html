@@ -39,5 +39,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDgs_Kdt41JyFyGXvSHgdWc10qT8n9ntYY",
+            authDomain: "herolo-weather-react.firebaseapp.com",
+            databaseURL: "https://herolo-weather-react.firebaseio.com",
+            projectId: "herolo-weather-react",
+            storageBucket: "herolo-weather-react.appspot.com",
+            messagingSenderId: "845422536168",
+            appId: "1:845422536168:web:33e15606597ff02cb5b05d",
+            measurementId: "G-ZRM365GXFD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
   </body>
 </html>
