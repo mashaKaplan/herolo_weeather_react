@@ -1,0 +1,25 @@
+.Title {
+    color: #8182a5;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Image {
+    display: none;
+}
+
+@media all and (max-width: 590px){
+    .Image {
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+    .Title {
+        display: none;
+    }
+}

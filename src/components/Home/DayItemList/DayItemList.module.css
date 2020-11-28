@@ -1,0 +1,12 @@
+.DayItemList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media all and (max-width: 590px){
+    .DayItemList {
+        flex-flow: column;
+    }
+}

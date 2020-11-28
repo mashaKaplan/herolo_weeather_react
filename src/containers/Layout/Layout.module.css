@@ -1,0 +1,30 @@
+.Layout {
+    display: flex;
+    flex-flow: column;
+    flex: auto;
+    height: 100vh;
+    background-color: #1c1d2f;
+}
+
+.Light {
+    background-color: #e5abc1 !important;
+}
+
+.Main {
+    flex: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.Cropped {
+    overflow: hidden;
+}
+
+@media all and (max-width: 800px){
+    .Layout {
+        height: unset;
+        min-height: 100vh;
+    }
+}

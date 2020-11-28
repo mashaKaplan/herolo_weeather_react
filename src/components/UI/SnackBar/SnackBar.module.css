@@ -1,0 +1,24 @@
+.SnackBar {
+    padding: 5px 10px;
+    width: 30%;
+    height: 50px;
+    background-color: salmon;
+    border-radius: 5px;
+    border: 2px solid darkred;
+    position: fixed;
+    bottom: -100px;
+    transition: bottom 0.5s ease-out;
+}
+
+.Open {
+    bottom: 10px;
+}
+
+.Close {
+    color: darkred;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 20px;
+}

@@ -1,0 +1,31 @@
+.Search {
+    width: 500px;
+    display: flex;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Search:hover {
+    border: 3px solid #8182a5;
+}
+
+.Input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.Error {
+    color: red;
+}
+
+@media all and (max-width: 590px){
+    .Search {
+        width: 100%;
+    }
+}

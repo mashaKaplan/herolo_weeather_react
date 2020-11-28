@@ -1,0 +1,10 @@
+export const SET_ERROR = 'SET_ERROR';
+export const TOOGLE_MENU = 'TOOGLE_MENU';
+export const SWITCH_THEME = 'SWITCH_THEME';
+export const SWITCH_MODE = 'SWITCH_MODE';
+export const SET_DAYTIME = 'SET_DAYTIME';
+export const TOOGLE_LOADING = 'TOOGLE_LOADING';
+export const SET_5_DAYS = 'SET_5_DAYS';
+export const SET_CURRENT_CONDITIONS = 'SET_CURRENT_CONDITIONS';
+export const UPDATE_FAVOURITE = 'UPDATE_FAVOURITE';
+export const SET_FAVOURITE = 'SET_FAVOURITE';

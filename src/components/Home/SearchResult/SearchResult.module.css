@@ -1,0 +1,52 @@
+.SearchResult {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Heart {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Place {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    color: #1c1d2f;
+}
+
+.Temperature {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.Location {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.WeatherIcon {
+    width: 250px;
+}
+
+@media all and (max-width: 590px){
+    .Location {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .SearchResult {
+        margin-bottom: 20px;
+    }
+
+    .PlaceWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

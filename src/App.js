@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from 'react';
+import {Route, Redirect, Switch} from 'react-router-dom';
 
-function App() {
+import Layout from './containers/Layout/Layout';
+
+const AsyncHome = React.lazy(() => {
+   return import('./containers/Home/Home')
+});
+
+const AsyncFavourites = React.lazy(() => {
+   return import('./containers/Favourites/Favourites')
+});
+
+const App = () =>  {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Layout>
+            <Suspense fallback={<p>Loading...</p>}>
+                <Switch>
+                    <Route path="/home/:id" render={(props) => <AsyncHome {...props}/>}/>
+                    <Route path="/home" render={(props) => <AsyncHome {...props}/>}/>
+                    <Route path="/favourite" render={(props) => <AsyncFavourites {...props} />}/>
+                    <Redirect to="/home"/>
+                </Switch>
+            </Suspense>
+        </Layout>
     </div>
   );
 }

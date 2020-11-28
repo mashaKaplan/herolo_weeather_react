@@ -1,0 +1,72 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.Option {
+    padding: 0 5px;
+    text-transform: capitalize;
+    color: #8182a5;
+}
+
+.Active {
+    color: white;
+}
+
+.ToggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.Toggle-switch input[type="checkbox"] {
+    display: none;
+}
+
+.Switch {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
+}
+.Switch::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #aaa;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+input[type="checkbox"]:checked + .Switch::before {
+    transform: translateX(25px);
+    background-color: #6699cc;
+}
+input[type="checkbox"]:checked + .Switch {
+    background-color: #336699;
+}
+
+
+.Toggle.react-toggle--checked .react-toggle-track {
+    background-color: #1c1d2f;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: red;
+}
+
+@media all and (max-width: 590px){
+    .Wrapper {
+        padding: 0 30px 20px 0;
+        justify-content: space-between;
+    }
+}

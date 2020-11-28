@@ -1,0 +1,26 @@
+.EmptyList {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.EmptyContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+a,
+.Navigation {
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8182a5;
+}
+
+.Light, .Light a, .Light a:hover {
+    color: #3a3b5e;
+}

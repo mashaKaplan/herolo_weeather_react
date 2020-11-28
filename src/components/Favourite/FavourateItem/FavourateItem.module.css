@@ -1,0 +1,50 @@
+.FavouriteItem {
+    width: 250px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #8182a5;
+    background-color: rgba(129,130,165, 0.4);
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 5s ease-out;
+    -moz-transition: -moz-transition-transform 5s ease-out;
+    -webkit-transition: -webkit-transition-transform 5s ease-out;
+    -o-transition: -o-transition-transform 5s ease-out;
+}
+
+.FavouriteItem:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    -moz-transition-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transition-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transition-transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.City {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Icon {
+    width: 100px;
+}
+
+.Temperature {
+    color: white;
+    font-size: 26px;
+}
+
+@media all and (max-width: 590px){
+    .FavouriteItem {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 !important;
+    }
+    .FavouriteItem:hover {
+        transform: none;
+    }
+}
