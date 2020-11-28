@@ -25,6 +25,7 @@ const Home = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(actions.toggleLoading(true));
         dispatch(actions.toggleMenu({isOpen: false}));
 
         if (favoriteById) {

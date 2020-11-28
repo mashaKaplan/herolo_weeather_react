@@ -6,7 +6,7 @@ const Loader = (props) => {
     const themeClass = props.isLight ? classes.Light : '';
     return (
         <div className={classes.LoaderWrapper}>
-            <div className={[classes.Loader, themeClass].join(' ')}>Loading...</div>
+            <div className={[classes.Loader, themeClass].join(' ')}></div>
         </div>
     )
 };
